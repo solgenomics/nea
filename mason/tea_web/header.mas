@@ -1,0 +1,91 @@
+<!doctype html public "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>PEN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
+    
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <script src="/static/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="/static/js/jqueryui/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/static/css/tea.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="/static/js/codebase/dhtmlxslider.css"/>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2460904-13"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-2460904-13');
+    </script>
+    
+    <script type="text/javascript" src="/static/js/jqueryui/jquery-ui.js"></script>
+      
+  </head>
+  
+  <body>
+    <div id="header">
+      <nav class="navbar navbar-default" style="border-radius: 0px;">
+        <div class="container-fluid">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://www.citrusgreening.org" style="padding:8px 8px" target="_blank"><img src="/static/images/cg_logo.png" width="40" title="CG Home"></a>
+            <a class="navbar-brand sgn_brand_name" href="/">Nicotiana Expression Atlas</a>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                  <li><a href="/help">Help</a></li>
+            </ul>
+          </div>
+        
+        </div>
+      </nav>
+      <br>
+    </div>
+  </body>
+</html>
+
+<style>
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    padding-bottom: 10px;
+    cursor: pointer
+  }
+  .dropdown-menu > li > a {
+    line-height: 14px;
+    font-size: 14px;
+    margin-top:0px;
+    padding-top:0px;
+    cursor: pointer
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    color: #555;
+    cursor: pointer
+  }
+
+  .navbar-default .navbar-nav>li>a:hover {
+    background-color: #e7e7e7;
+  }
+
+</style>
+
+<script>
+
+  jQuery(document).ready(function() {
+    jQuery(".menu_click_dropdown").removeClass("dropdown-toggle");
+    jQuery(".menu_click_dropdown").removeAttr("data-toggle");
+  });
+
+</script>

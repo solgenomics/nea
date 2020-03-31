@@ -1,0 +1,96 @@
+<center>
+  <h2 style="margin-top:0px">Selecting the conditions of the experiment</h2>
+</center>
+<br>
+
+<div class="container" style="width:80%;max-width:1000px;">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <a href="/help">Go back</a><br><br>
+      
+      <p>
+        Once the gene or genes have been selected for the expression analysis,
+        the Project (data set) that is to be queried is then selected, 
+        the minimum correlation value for co-expressed genes is chosen and the targeted stages, 
+        organs, tissues and treatments are defined from the display in the <a href="/help/output" target="blank">expression viewer output</a> (<a href="#params_fig1">Figure 1</a>).
+      </p>
+      <br>
+      <center>
+        <img id="params_fig1" src="/static/images/help_imgs/exp_parameters.png" style="width:100%;max-width:1000px;"><br>
+        Figure 1. Eligible options for the Expression Viewer.<br><br><br>
+      </center>
+        
+      <h4 id="projects"><b>2.1 Projects</b></h4>
+      
+      <p>
+        The Project section displays the list of projects (another term for data sets) that are available in the expression atlas. 
+        Selecting one of the projects will show the available stages, organs, tissues and treatments in the selection boxes below. 
+        Additionally, on the right-top corner of the projects box there is a link to <a href="/anatomy_viewer/microscopy/" target="blank">'more info'</a> that will open 
+        a new page where the user can find information, figures, articles and links associated with each of the projects.
+      </p>
+      
+      <center>
+        <!--<img id="params_fig2" src="/static/images/help_imgs/pimpi_input.png" style="width:100%;max-width:1000px;"><br>
+        Figure 2. <i>S.pimpinellifolium</i> Fruit Development project selection.<br><br><br>-->
+      </center>
+        
+      <h4 id="cor_filter"><b>2.2 Correlation filter</b></h4>
+      
+      <p>
+        A slider bar (<a href="#params_fig3">Figure 3</a>) allows to the user to set the minimum correlation value (0.65 - 1.0) 
+        to display co-expressed genes with similar expression profiles. 
+        Higher correlation values will result in more genes being filtered out, 
+        giving more conservative correlations. 
+        Lower correlation values will result in less strict correlations being included in the analysis.
+      </p>
+      
+      <center>
+        <img id="params_fig3" src="/static/images/help_imgs/cor_slider.png" style="width:50%;max-width:500px;"><br>
+        Figure 3. Correlation filter slider.<br><br><br>
+      </center>
+        
+      <h4 id="cond_sel"><b>2.3 Selection of the conditions</b></h4>
+      
+      <p>
+        Once the project is selected, the user can choose the stages, organs or tissues that will be included in the analysis. 
+        The selection boxes for these conditions are standard HTML elements that allow the user to select one item clicking on it, 
+        or multiple items using the keys <kbd>shift</kbd> and/or c<kbd>ctrl</kbd> keys: 
+        <br><br>
+        
+        Clicking on one item (e.g. <a href="#params_fig4">Figure 4</a>), 
+        then holding the key <kbd>shift</kbd> and clicking on another item from the selection box, 
+        will result in all items between the two clicked items also being selected (e.g.  <a href="#params_fig4">Figure 4</a>).
+
+        Clicking on one item while holding the key <kbd>ctrl</kbd> 
+        (use the <kbd>command</kbd> key if you are a mac computer user) will add this item to the selection. 
+        Clicking again on the same item holding <kbd>ctrl</kbd> will remove this item from the selection. 
+        <kbd>Select All</kbd> and <kbd>Unselect</kbd> buttons will select or unselect, respectively, all the items from the selection box at once.
+        <br>
+        <br>
+        Note that when no items are selected all the stages and tissues from the data set will be display.
+        This is likely to be a common option for most users.
+      </p>
+      
+      <center>
+        <img id="params_fig4" src="/static/images/help_imgs/multi_select.png" style="width:100%;max-width:1000px;"><br>
+        Figure 4. Multiple selection of conditions.<br><br><br>
+      </center>
+        
+      <p>
+        Different selections of the stage, organ, tissue and treatment selection boxes will produce different <a href="/help/output" target="blank">outputs</a>. 
+        For example, when selecting different items from the selection boxes, 
+        the shape of the <a href="/help/output/#exp_cube" target="blank">expression cube</a> will adapt to the selected conditions (<a href="#params_fig4">Figure 5</a>). 
+        The figures associated with the <a href="/help/output/#exp_img" target="blank">expression images</a> and the 
+        <a href="/help/output/#exp_heatmap" target="blank">heatmap</a> in the data output will also change according to the selected conditions.
+      </p>
+      
+      <center>
+        <img id="params_fig5" src="/static/images/help_imgs/cube_shapes.png" style="width:100%;max-width:1000px;"><br>
+        Figure 5. Example of different shapes of the Expression Cube.<br><br><br>
+      </center>
+      <br><br>
+      
+      
+    </div>
+  </div>
+</div>
