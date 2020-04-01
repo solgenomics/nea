@@ -10,7 +10,7 @@ $input_gene => ()
 
 <script>
 //display link and query gene description
-$("#gene_name").html("<img src='/static/images/logo.png' height='30' style='margin-bottom: 10px;' /> "+genes[0]);
+$("#gene_name").html("<img src='/static/images/tab-logo.png' height='30' style='margin-bottom: 10px;' /> "+genes[0]);
 $("#gene_desc").html(gene_descriptions[genes[1]]);
 $("#project_desc").html(project_name);
 $("#back_to_input").html("Go back to input page");

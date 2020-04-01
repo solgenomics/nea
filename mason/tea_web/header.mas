@@ -37,7 +37,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="https://www.citrusgreening.org" style="padding:8px 8px" target="_blank"><img src="/static/images/cg_logo.png" width="40" title="CG Home"></a>
+            <a class="navbar-brand" href="/expression_viewer/input" style="padding:2px 30px"><img src="/static/images/BAT-logo.png" width="100" title="Home"></a>
             <a class="navbar-brand sgn_brand_name" href="/">Nicotiana Expression Atlas</a>
           </div>
           
