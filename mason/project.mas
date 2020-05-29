@@ -1,0 +1,82 @@
+<%args>
+$organism => ()
+$organism_description => ()
+$project_name => ()
+$project_description => ()
+$project_contact => ()
+
+$layer_description => ()
+$exp_tables => ()
+</%args>
+
+<center>
+  <h2><% $project_name %></h2>
+
+  <div style="width:900px; text-align: left;">
+    <a href="/project_menu" class="pull-left" style="text-decoration: underline">Go back to menu page</a>
+    <br>
+    <br>
+    <p><b>Genotype: </b><i><% $organism %></i>
+    <p><b>Description: </b><% $project_description %></p>
+    <p><b>Contact: </b><% $project_contact %></p>
+
+    <p>The next figures represent the available conditions (Developmental stages, tissues, treatments, etc.) for this data set. Colors from the image are only for display purpose</p>
+    <br>
+    <p><b>Experiments:</b></p>
+    <div class="legend_sq" style="background-color:#ffb7b2;"></div> <div>FlueCuring TimeCourse  </div><br>
+    <div class="legend_sq" style="background-color:#b8d7f2;"></div> <div>OmicsAtlas2013 Diurnal  </div><br>
+    <div class="legend_sq" style="background-color:#f2e1f7;"></div> <div>OmicsAtlas2013 HormoneTimeCourse  </div><br>
+    <div class="legend_sq" style="background-color:#ff9aa2;"></div> <div>OmicsAtlas2014 BlockII  </div><br>
+    <div class="legend_sq" style="background-color:#ffdac1;"></div> <div>OmicsAtlas2015 Roots  </div><br>
+    <div class="legend_sq" style="background-color:#e2f0cb;"></div> <div>Trichomes Bridging  </div><br>
+    <div class="legend_sq" style="background-color:#b5ead7;"></div> <div>Trichomes Orientals </div><br>
+    <div class="legend_sq" style="background-color:#d6d6d6;"></div> <div>Trichomes Pilot </div><br>
+    <div class="legend_sq" style="background-color:#c8f7e9;"></div> <div>Trichomes StressS  </div><br>
+    <div class="legend_sq" style="background-color:#c8f7e9;"></div> <div>Trichomes StressT  </div><br>
+    <br>
+    <p><b>Layers:</b></p>
+    <% $layer_description %><br>
+    <% $exp_tables %><br>
+  </div>
+
+  <div class="bottom_section">
+  </div>
+</center>
+
+
+<style>
+
+.bottom_section {
+  margin-bottom:100px;
+  margin-top:100px;
+  position: relative;
+}
+
+.images_div {
+  display: block;
+  margin-bottom:100px;
+}
+
+#color_legend {
+	width:400px;
+  padding-top:20px;
+}
+
+#color_legend li {
+	display:block;
+	height:40px;
+  font-size: 20px;
+}
+
+.legend_sq {
+	float:left;
+	width:25px;
+	height:25px;
+	border-style:solid;
+	border-width:2px;
+	border-color:#ccc;
+	border-radius:5px;
+	margin-right:10px;
+}
+
+</style>
